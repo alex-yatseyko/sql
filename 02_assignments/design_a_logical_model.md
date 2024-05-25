@@ -15,7 +15,12 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
+As for me in the case when will overwrite address the primary key should be customer_id because it will be just connect to that customer and when we will UPDATE where customer_id = some customer id we will overwrite it
+
+In the case when we want to save history of addresses maybe we should do a primary key date of adding and also a field active so the last one added by customer will be active, but customer_id will be not the primary key for each address so we will not overwrite address if customer will add a new address
+
+According to privacy implications if we'are overriding address it's better because we will not save the history of customer. If someone will hack the DB he will get all info about customer movement
+
 ```
 
 ## Question 4
@@ -23,7 +28,8 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
+First of all, my is not overcomplicated and easy to understand. Secondly, my is based around order and in the example there is also part based around order, but that means that in their case it was not enough functionality and fields to manage everything, but because of simplicity it's easier for me to connect other important tables like employees and customers.
+Thirdly, my bookstore is just very simple. I can't handle all the date that AdventureWorks Schema can. I definitely need to expand my logical model. And this is the answer about changes. If I want to handle and to save more stuff I need to expand my model.
 ```
 
 # Criteria
